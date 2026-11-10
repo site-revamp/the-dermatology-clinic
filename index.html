@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#332D2B">
+<title>The Dermatology Clinic | Adult &amp; Children’s Skin Care, Singapore</title>
+<meta name="description" content="Adult and paediatric dermatology with Dr Uma Alagappan. Explore care for eczema, allergies, women’s skin and more. Clinics at Parkway East and Paragon, Singapore.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#332d2b;--deep:#241f1d;--body:#49413c;--muted:#71655d;--clay:#db874f;--brown:#914116;--hover:#713211;--cream:#f3efe9;--sand:#f2efea;--paper:#fffdfa;--wash:#f7e7dc;--line:#ded4cb;--strong:#a28b7a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;background:var(--paper);color:var(--body);font:18px/1.65 'Source Sans 3',sans-serif}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{font-family:Gotu,sans-serif;font-weight:400;color:var(--ink);line-height:1.25}
+h1{font-size:clamp(42px,4.7vw,68px);letter-spacing:-.05em}
+h2{font-size:clamp(34px,3.6vw,46px);letter-spacing:-.04em}
+h3{font-size:28px;letter-spacing:-.035em}
+a{color:var(--brown);text-underline-offset:5px}
+a:hover{color:var(--hover)}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--brown);outline-offset:5px}
+.dark a:focus-visible{outline-color:var(--cream)}
+::selection{background:var(--wash);color:var(--deep)}
+.wrap{width:min(1200px,calc(100% - 96px));margin:auto}
+.section{padding:92px 0}
+.eyebrow{font-size:15px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--brown);margin-bottom:20px}
+.small{font-size:15px;line-height:1.6}
+.muted{color:var(--muted)}
+.skip{position:fixed;top:-100px;left:15px;z-index:100;background:#fff;padding:12px}
+.skip:focus{top:12px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:54px;padding:13px 24px;background:var(--brown);border:1px solid var(--brown);border-radius:30px;color:white;font-size:18px;font-weight:600;text-decoration:none;transition:background .2s,transform .2s}
+.button:hover{background:var(--hover);border-color:var(--hover);color:#fff;transform:translateY(-2px)}
+.button.outline{background:transparent;border-color:var(--strong);color:var(--ink)}
+.button.outline:hover{background:var(--wash);border-color:var(--brown)}
+.arrow{display:inline-block;position:relative;width:9px;height:9px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;flex-shrink:0;margin:0 3px}
+.arrow:after{content:'';position:absolute;right:-1px;top:-1px;width:13px;border-top:1.5px solid currentColor;transform:rotate(-45deg);transform-origin:right center}
+.link{display:inline-flex;align-items:center;gap:12px;font-size:17px;font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.header{position:sticky;top:0;z-index:30;background:var(--ink);color:var(--cream);border-bottom:1px solid #645851}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:105px}
+.brand{flex-shrink:0}
+.brand img{width:242px;height:auto}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{font-size:17px;color:var(--cream);text-decoration:none}
+.nav a:hover{text-decoration:underline}
+.nav .nav-cta{padding:10px 20px;border:1px solid var(--strong);border-radius:26px}
+.menu{display:none;font-size:17px;color:var(--cream);background:transparent;border:1px solid var(--strong);border-radius:22px;padding:8px 17px}
+.hero{background:var(--sand);position:relative}
+.hero-grid{display:grid;grid-template-columns:1.22fr 1fr;gap:80px;align-items:center;padding-top:54px;padding-bottom:58px}
+.hero-copy>p:not(.eyebrow){font-size:19px;max-width:540px;margin-top:24px}
+.hero h1 span{color:var(--brown)}
+.hero .small{font-size:15px!important;margin-top:20px!important}
+.portrait{position:relative;padding:0 0 30px 25px;max-width:450px;width:100%;justify-self:end}
+.portrait:before{content:'';position:absolute;inset:30px 22px 0 0;border:1px solid var(--strong);border-radius:150px 150px 8px 8px}
+.portrait img{position:relative;width:100%;height:470px;object-fit:cover;border-radius:140px 140px 8px 8px}
+.portrait figcaption{position:absolute;left:0;right:34px;bottom:0;background:var(--ink);color:var(--cream);padding:20px 25px;border-radius:3px}
+.portrait strong{font-family:Gotu,sans-serif;font-size:25px;display:block;line-height:1.35;font-weight:400}
+.portrait figcaption span{display:block;font-size:16px;margin-top:6px}
+.intro-strip{display:flex;align-items:center;justify-content:space-between;gap:30px;border-top:1px solid var(--line);padding:22px 0;font-size:17px}
+.intro-strip strong{font-weight:600;color:var(--ink)}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:55px;margin-bottom:38px}
+.section-head>p{max-width:365px;font-size:18px}
+.care-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 44px}
+.care-card{padding:28px 0 32px;border-top:1px solid var(--line);display:flex;flex-direction:column;align-items:start}
+.care-card svg{width:48px;height:48px;fill:none;stroke:var(--brown);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;margin-bottom:23px}
+.care-card h3{font-size:27px;margin-bottom:15px}
+.care-card p{font-size:18px;margin-bottom:20px}
+.care-links{display:flex;flex-direction:column;align-items:start;gap:9px;margin-top:auto}
+.care-links a{font-size:17px;font-weight:600}
+.care-more{border-top:1px solid var(--line);padding-top:24px;font-size:17px}
+.doctor{background:var(--ink);color:var(--cream)}
+.doctor-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:85px}
+.doctor h2,.doctor h3{color:var(--cream)}
+.doctor .eyebrow,.doctor a{color:#f0ba94}
+.doctor-copy>p:not(.eyebrow){margin-top:24px;font-size:18px}
+.doctor-copy .link{margin-top:25px}
+.credentials{display:flex;flex-direction:column}
+.credential{border-top:1px solid #77665c;padding:24px 0;display:grid;grid-template-columns:52px 1fr;gap:22px}
+.credential:last-child{border-bottom:1px solid #77665c}
+.credential>span{color:#f0ba94;font-size:17px;font-weight:600;letter-spacing:.08em}
+.credential h3{font-size:24px}
+.credential p{font-size:17px;margin-top:10px;color:#e8ddd5}
+.journey{background:var(--wash)}
+.journey-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:70px}
+.journey-intro>p:not(.eyebrow){margin-top:22px;font-size:18px}
+.steps{counter-reset:visit}
+.step{counter-increment:visit;display:grid;grid-template-columns:42px 1fr;gap:20px;padding:24px 0;border-top:1px solid #cfb6a4}
+.step:before{content:'0' counter(visit);font-size:17px;font-weight:600;color:var(--brown)}
+.step h3{font-size:25px}
+.step p{font-size:18px;margin-top:12px}
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.clinic{border:1px solid var(--line);border-top:3px solid var(--clay);padding:32px;background:#fff}
+.clinic .eyebrow{margin-bottom:12px}
+.clinic h3{font-size:29px}
+.clinic address{font-style:normal;font-size:18px;min-height:120px;margin:20px 0}
+.clinic-phone{font-size:23px;color:var(--ink);display:inline-block;margin-bottom:16px;text-decoration:none}
+.clinic .link{display:flex;width:fit-content;margin-bottom:23px}
+.clinic .button{width:100%;font-size:17px;padding:13px 18px}
+.clinic .small{margin-top:13px;color:var(--muted)}
+.hours{display:flex;justify-content:space-between;gap:32px;background:var(--sand);padding:26px 30px;margin-top:28px;font-size:17px}
+.hours strong{color:var(--ink);font-weight:600}
+.hours a{overflow-wrap:anywhere}
+.hours p+p{margin-top:8px}
+.appointment{background:var(--brown);color:#fff}
+.appointment h2{color:#fff}
+.appointment .eyebrow{color:#ffe1cb}
+.appointment-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:75px;align-items:center}
+.appointment-copy>p:not(.eyebrow){margin-top:24px;font-size:18px}
+.appointment .button{background:var(--cream);color:var(--ink);border-color:var(--cream);width:100%}
+.appointment .button:hover{background:white}
+.appointment a:focus-visible{outline-color:#fff}
+.appointment .link{color:#fff;margin-top:16px}
+.appointment .small{margin-top:17px;color:#ffe6d6}
+.faq-grid{display:grid;grid-template-columns:.85fr 1.35fr;gap:75px}
+.faq-copy>p:not(.eyebrow){margin-top:22px;font-size:18px}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:22px;font-size:20px;font-weight:600;color:var(--ink);padding:22px 0;line-height:1.5}
+summary::-webkit-details-marker{display:none}
+summary:after{content:'+';font-size:25px;font-weight:400}
+details[open] summary:after{content:'−'}
+details p{font-size:18px;padding:0 20px 24px 0}
+.footer{background:var(--deep);color:var(--cream);padding:36px 0}
+.footer-top{display:flex;justify-content:space-between;align-items:start;gap:36px}
+.footer-title{font:400 25px/1.5 Gotu,sans-serif}
+.footer-top nav{display:flex;flex-wrap:wrap;gap:22px}
+.footer a{color:var(--cream);font-size:17px}
+.footer-bottom{display:flex;justify-content:space-between;gap:24px;border-top:1px solid #77665c;margin-top:25px;padding-top:23px;font-size:15px}
+.mobile-actions{display:none}
+.reveal{animation:arrive .65s both}
+@keyframes arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+@media(max-width:1050px){
+.wrap{width:calc(100% - 64px)}
+.nav{gap:23px}
+.brand img{width:205px}
+.hero-grid{gap:40px}
+.hero-copy .actions{flex-direction:column;max-width:330px}
+.portrait img{height:455px}
+.portrait strong{font-size:23px}
+.doctor-grid,.journey-grid,.appointment-grid,.faq-grid{gap:45px}
+.care-grid{gap:0 30px}
+.clinic{padding:26px}
+}
+@media(max-width:850px){
+.header-inner{min-height:92px}
+.menu{display:block}
+.nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--ink);border-top:1px solid #77665c;border-bottom:1px solid #77665c;padding:18px 32px}
+.nav.open{display:flex;flex-direction:column;align-items:stretch;gap:0}
+.nav a{padding:13px 0;font-size:18px}
+.nav .nav-cta{border:0;border-radius:0;padding:13px 0}
+.hero-grid{gap:30px}
+.hero-copy>p:not(.eyebrow){font-size:18px}
+.portrait img{height:430px}
+.portrait{padding-left:15px}
+.portrait figcaption{right:16px;padding:17px}
+.portrait strong{font-size:22px}
+.care-card h3{font-size:25px}
+.section{padding:76px 0}
+.doctor-grid,.journey-grid{grid-template-columns:1fr;gap:35px}
+.doctor-copy{max-width:650px}
+.journey-intro{max-width:560px}
+.clinic address{min-height:145px}
+.clinic .button{font-size:16px}
+.hours{display:block}
+.hours>div+div{margin-top:20px}
+.appointment-grid{gap:35px}
+.faq-grid{grid-template-columns:1fr;gap:32px}
+.faq-copy{max-width:540px}
+}
+@media(max-width:650px){
+html{scroll-padding-top:97px}
+.wrap{width:calc(100% - 40px)}
+.header-inner{min-height:88px;gap:20px}
+.brand img{width:205px}
+.menu{font-size:16px;padding:8px 15px}
+.hero-grid{grid-template-columns:1fr;gap:32px;padding:36px 0 40px}
+.hero-copy>p:not(.eyebrow){font-size:18px}
+.hero-copy .actions{max-width:none;margin-top:25px}
+.button{font-size:17px}
+.hero .small{font-size:15px!important}
+.portrait{max-width:370px;justify-self:center;padding-left:20px}
+.portrait img{height:430px}
+.portrait figcaption{right:22px;padding:17px 20px}
+.portrait strong{font-size:24px}
+.portrait figcaption span{font-size:16px}
+.intro-strip{display:block;font-size:17px;padding:22px 0}
+.intro-strip .link{margin-top:12px}
+.section{padding:60px 0}
+.section-head{display:block;margin-bottom:30px}
+.section-head>p{max-width:none;margin-top:22px;font-size:17px}
+.care-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+.care-card{padding:25px 0}
+.care-card svg{width:43px;height:43px;margin-bottom:20px}
+.care-card h3{font-size:24px;line-height:1.3}
+.care-card p{font-size:16px;line-height:1.65;margin-bottom:18px}
+.care-links a{font-size:16px;line-height:1.55}
+.care-more{font-size:17px}
+.doctor-copy>p:not(.eyebrow){font-size:17px}
+.credential{grid-template-columns:34px 1fr;gap:17px}
+.credential h3{font-size:24px}
+.credential p{font-size:17px}
+.journey-intro>p:not(.eyebrow),.step p{font-size:17px}
+.step{grid-template-columns:30px 1fr;gap:15px}
+.step h3{font-size:24px}
+.location-grid{grid-template-columns:1fr;gap:25px}
+.clinic{padding:26px}
+.clinic address{min-height:0;font-size:18px}
+.clinic .button{font-size:17px}
+.hours{padding:24px;font-size:17px}
+.appointment-grid{grid-template-columns:1fr;gap:28px}
+.appointment-copy>p:not(.eyebrow){font-size:17px}
+.appointment .link{font-size:17px}
+.faq-copy>p:not(.eyebrow){font-size:17px}
+summary{font-size:18px}
+details p{font-size:17px;padding-right:0}
+.footer{padding:32px 0 calc(115px + env(safe-area-inset-bottom))}
+.footer-top,.footer-bottom{flex-direction:column;align-items:start;gap:20px}
+.footer-top nav{gap:15px 23px}
+.footer-title{font-size:23px}
+.footer-bottom{gap:12px}
+.mobile-actions{position:fixed;left:0;right:0;bottom:0;z-index:40;display:grid;grid-template-columns:1fr 1fr;gap:10px;background:var(--paper);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+.mobile-actions .button{min-height:50px;font-size:17px;padding:10px 8px;gap:9px}
+}
+@media(max-width:360px){
+.wrap{width:calc(100% - 32px)}
+.brand img{width:180px}
+.header-inner{gap:16px}
+.care-grid{column-gap:18px}
+.care-card h3{font-size:24px}
+.portrait img{height:380px}
+.portrait strong{font-size:22px}
+.clinic{padding:22px}
+}
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*:before,*:after{animation:none!important;transition:none!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalOrganization",
+  "name":"The Dermatology Clinic",
+  "url":"https://thedermclinic.com.sg/",
+  "medicalSpecialty":"Dermatology",
+  "email":"enquiries@thedermclinic.com.sg",
+  "location":[
+    {
+      "@type":"MedicalClinic",
+      "name":"The Dermatology Clinic — Parkway East",
+      "telephone":"+6565179760",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"321 Joo Chiat Place, #05-01A Parkway East Specialist Hospital",
+        "addressLocality":"Singapore",
+        "postalCode":"427990",
+        "addressCountry":"SG"
+      }
+    },
+    {
+      "@type":"MedicalClinic",
+      "name":"The Dermatology Clinic — Paragon",
+      "telephone":"+6563200310",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"290 Orchard Road, #09-20/21 Paragon Medical Centre",
+        "addressLocality":"Singapore",
+        "postalCode":"238859",
+        "addressCountry":"SG"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header dark">
+  <div class="wrap header-inner">
+    <a class="brand" href="#main" aria-label="The Dermatology Clinic home">
+      <img src="data:image/webp;base64,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" alt="TDC — The Dermatology Clinic" width="843" height="245">
+    </a>
+    <nav class="nav" id="navigation" aria-label="Main navigation">
+      <a href="#care">Our care</a>
+      <a href="#doctor">Dr Uma</a>
+      <a href="#clinics">Our clinics</a>
+      <a class="nav-cta" href="#appointment">Request a visit</a>
+    </nav>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Adult &amp; paediatric dermatology · Singapore</p>
+        <h1 id="hero-title">Skin care for you.<br><span>And your<br>little ones.</span></h1>
+        <p>Specialist dermatology with Dr Uma Alagappan, with care for children’s skin, adult skin concerns, allergies and women’s dermatology.</p>
+        <div class="actions">
+          <a class="button" href="#appointment">Request an appointment <span class="arrow" aria-hidden="true"></span></a>
+          <a class="button outline" href="#care">Find your care <span class="arrow" aria-hidden="true"></span></a>
+        </div>
+        <p class="small muted">Parkway East · Paragon Medical Centre<br>Choose your preferred clinic when you enquire.</p>
+      </div>
+
+      <figure class="portrait reveal">
+        <img src="data:image/avif;base64,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" alt="Dr Uma Alagappan, consultant dermatologist" width="370" height="450" fetchpriority="high">
+        <figcaption>
+          <strong>Dr Uma Alagappan</strong>
+          <span>MBBS (NUS) · MRCP (UK) · FAMS (Dermatology)</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="wrap intro-strip">
+      <div><strong>Two clinics. Clear contact options.</strong><br>Find us in eastern and central Singapore.</div>
+      <a class="link" href="#clinics">Choose your clinic <span class="arrow" aria-hidden="true"></span></a>
+    </div>
+  </section>
+
+  <section class="section" id="care" aria-labelledby="care-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Begin with what matters to you</p>
+          <h2 id="care-title">A clearer way<br>to find your care.</h2>
+        </div>
+        <p>Explore these starting points for treatment information, or ask the clinic team where to begin.</p>
+      </div>
+
+      <div class="care-grid">
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="15"/>
+            <path d="M15 11 10 7m23 4 5-4M20 9c-4-5 3-8 6-4 2 3 0 5-2 5M17 23h1m12 0h1m-12 7q5 4 10 0M15 39v5m18-5v5"/>
+          </svg>
+          <h3>Children’s skin</h3>
+          <p>Information on childhood eczema, birthmarks and common skin infections.</p>
+          <div class="care-links">
+            <a href="https://thedermclinic.com.sg/atopic-dermatitis/">Childhood eczema <span class="arrow" aria-hidden="true"></span></a>
+            <a href="https://thedermclinic.com.sg/birthmarks/">Birthmarks <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </article>
+
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M9 31c7-8 11 6 18-2s10-7 14-3M9 39c7-8 11 6 18-2s10-7 14-3M15 22V10a4 4 0 0 1 8 0v8m0-3a4 4 0 0 1 8 0v7M11 17l-4-3m29 3 5-3"/>
+          </svg>
+          <h3>Adult skin</h3>
+          <p>Explore care for eczema, acne and other common adult skin conditions.</p>
+          <div class="care-links">
+            <a href="https://thedermclinic.com.sg/eczema/">Eczema care <span class="arrow" aria-hidden="true"></span></a>
+            <a href="https://thedermclinic.com.sg/acne/">Acne care <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </article>
+
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M24 5 8 11v12c0 10 8 16 16 20 8-4 16-10 16-20V11ZM18 24h12m-6-6v12"/>
+          </svg>
+          <h3>Allergy care</h3>
+          <p>Learn about food and contact allergies, including food allergy in children.</p>
+          <div class="care-links">
+            <a href="https://thedermclinic.com.sg/food-allergy-in-children/">Children’s food allergy <span class="arrow" aria-hidden="true"></span></a>
+            <a href="https://thedermclinic.com.sg/contact-allergy/">Contact allergy <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </article>
+
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="11" r="6"/>
+            <path d="M12 42V32a12 12 0 0 1 24 0v10M18 42V30m12 12V30M20 35h8M24 31v8"/>
+          </svg>
+          <h3>Women’s skin</h3>
+          <p>Explore pregnancy-related skin concerns, pigmentation and adult female acne.</p>
+          <div class="care-links">
+            <a href="https://thedermclinic.com.sg/pregnancy-dermatoses/">Pregnancy skin care <span class="arrow" aria-hidden="true"></span></a>
+            <a href="https://thedermclinic.com.sg/adult-female-acne/">Adult female acne <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </article>
+
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="20" cy="20" r="12"/>
+            <circle cx="20" cy="20" r="3"/>
+            <path d="m29 29 12 12M8 40h12M34 7h8m-4-4v8"/>
+          </svg>
+          <h3>Moles &amp; growths</h3>
+          <p>Find information about mole checks, skin growths and minor skin procedures.</p>
+          <div class="care-links">
+            <a href="https://thedermclinic.com.sg/mole-check/">Mole checks <span class="arrow" aria-hidden="true"></span></a>
+            <a href="https://thedermclinic.com.sg/skin-growths/">Skin growths <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </article>
+
+        <article class="care-card">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M14 8h20v32H14ZM19 8V4h10v4M14 18h20M20 29h8m-4-4v8M5 13v8m-4-4h8M40 3v8m-4-4h8"/>
+          </svg>
+          <h3>Cosmetic care</h3>
+          <p>Learn about laser treatments, pigmentation, scars and skin rejuvenation.</p>
+          <div class="care-links">
+            <a href="https://thedermclinic.com.sg/cosmetic-dermatology/">Cosmetic dermatology <span class="arrow" aria-hidden="true"></span></a>
+            <a href="https://thedermclinic.com.sg/scars-singapore/">Scar treatments <span class="arrow" aria-hidden="true"></span></a>
+          </div>
+        </article>
+      </div>
+
+      <p class="care-more">Not sure which area fits your concern? <a href="#appointment">Contact the clinic team.</a></p>
+    </div>
+  </section>
+
+  <section class="section doctor dark" id="doctor" aria-labelledby="doctor-title">
+    <div class="wrap doctor-grid">
+      <div class="doctor-copy">
+        <p class="eyebrow">Meet your dermatologist</p>
+        <h2 id="doctor-title">Dr Uma Alagappan</h2>
+        <p>A consultant dermatologist with interests in paediatric, women’s and general dermatology, including chronic eczema, food allergy and immunodermatology.</p>
+        <p>Her background includes dermatology training at Changi General Hospital and the National Skin Centre, followed by paediatric dermatology experience at KK Women’s and Children’s Hospital.</p>
+        <a class="link" href="https://thedermclinic.com.sg/our-doctor/">Read her full profile <span class="arrow" aria-hidden="true"></span></a>
+      </div>
+      <div class="credentials">
+        <div class="credential">
+          <span>01</span>
+          <div>
+            <h3>Specialist qualifications</h3>
+            <p>MBBS (NUS), MRCP (UK) and FAMS (Dermatology).</p>
+          </div>
+        </div>
+        <div class="credential">
+          <span>02</span>
+          <div>
+            <h3>Paediatric focus</h3>
+            <p>Further training in paediatric immunodermatology and allergo-dermatology at Boston Children’s Hospital.</p>
+          </div>
+        </div>
+        <div class="credential">
+          <span>03</span>
+          <div>
+            <h3>Adults &amp; children</h3>
+            <p>Medical dermatology alongside laser and procedural care, based on individual assessment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section journey" aria-labelledby="journey-title">
+    <div class="wrap journey-grid">
+      <div class="journey-intro">
+        <p class="eyebrow">Planning your visit</p>
+        <h2 id="journey-title">A simple place<br>to start.</h2>
+        <p>For yourself or your child, the next step is a conversation with the clinic.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div>
+            <h3>Choose your clinic</h3>
+            <p>Parkway East or Paragon. Call the relevant clinic or include your preferred location in a WhatsApp enquiry.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Share your concern</h3>
+            <p>Let the team know whether the visit is for an adult or child and the main reason for your enquiry.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>Confirm the arrangements</h3>
+            <p>The clinic team will confirm the appointment details. Ask about any documents or preparation needed for your visit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="clinics" aria-labelledby="clinics-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Parkway East &amp; Paragon</p>
+          <h2 id="clinics-title">Find your<br>preferred clinic.</h2>
+        </div>
+        <p>Separate clinic numbers, clear addresses and direct enquiry options.</p>
+      </div>
+
+      <div class="location-grid">
+        <article class="clinic">
+          <p class="eyebrow">Eastern Singapore</p>
+          <h3>Parkway East</h3>
+          <address>321 Joo Chiat Place<br>#05-01A Parkway East Specialist Hospital<br>Singapore 427990</address>
+          <a class="clinic-phone" href="tel:+6565179760">+65 6517 9760</a>
+          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=The+Dermatology+Clinic+321+Joo+Chiat+Place+05-01A+427990" target="_blank" rel="noopener">Open map <span class="arrow" aria-hidden="true"></span></a>
+          <a class="button" href="https://wa.me/6582055209?text=Hello%2C%20I%20would%20like%20to%20request%20an%20appointment%20at%20Parkway%20East.">Enquire about Parkway East <span class="arrow" aria-hidden="true"></span></a>
+          <p class="small">Opens the shared WhatsApp with Parkway East included.</p>
+        </article>
+
+        <article class="clinic">
+          <p class="eyebrow">Central Singapore</p>
+          <h3>Paragon</h3>
+          <address>290 Orchard Road<br>#09-20/21 Paragon Medical Centre<br>Singapore 238859</address>
+          <a class="clinic-phone" href="tel:+6563200310">+65 6320 0310</a>
+          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=The+Dermatology+Clinic+290+Orchard+Road+09-20+21+238859" target="_blank" rel="noopener">Open map <span class="arrow" aria-hidden="true"></span></a>
+          <a class="button" href="https://wa.me/6582055209?text=Hello%2C%20I%20would%20like%20to%20request%20an%20appointment%20at%20Paragon.">Enquire about Paragon <span class="arrow" aria-hidden="true"></span></a>
+          <p class="small">Opens the shared WhatsApp with Paragon included.</p>
+        </article>
+      </div>
+
+      <div class="hours">
+        <div>
+          <strong>Published clinic hours</strong>
+          <p>Monday–Friday: 9am–5pm<br>Saturday: 9am–12.30pm<br>Sunday &amp; public holidays: Closed</p>
+          <p class="small">Please confirm appointment availability before visiting.</p>
+        </div>
+        <div>
+          <strong>Shared enquiry contact</strong>
+          <p><a href="https://wa.me/6582055209">WhatsApp only: +65 8205 5209</a><br><a href="mailto:enquiries@thedermclinic.com.sg">enquiries@thedermclinic.com.sg</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section appointment dark" id="appointment" aria-labelledby="appointment-title">
+    <div class="wrap appointment-grid">
+      <div class="appointment-copy">
+        <p class="eyebrow">Take the next step</p>
+        <h2 id="appointment-title">Let’s arrange<br>your visit.</h2>
+        <p>Message the clinic with your preferred location, or call Parkway East or Paragon using the numbers above.</p>
+      </div>
+      <div>
+        <a class="button" href="https://wa.me/6582055209">Request a visit on WhatsApp <span class="arrow" aria-hidden="true"></span></a>
+        <a class="link" href="https://thedermclinic.com.sg/contact/">Use the clinic’s online enquiry form <span class="arrow" aria-hidden="true"></span></a>
+        <p class="small">An enquiry is a request. Please wait for the clinic team to confirm the date, time and location.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <div class="faq-copy">
+        <p class="eyebrow">Before you enquire</p>
+        <h2 id="faq-title">A little clarity<br>before your visit.</h2>
+        <p>For availability and appointment arrangements, the clinic team can help.</p>
+      </div>
+      <div class="faqs">
+        <details name="tdc-faq">
+          <summary>Does the clinic see adults and children?</summary>
+          <p>Yes. The clinic provides adult and paediatric dermatology. Dr Uma’s interests include children’s skin, women’s dermatology, chronic eczema, food allergy and immunodermatology.</p>
+        </details>
+        <details name="tdc-faq">
+          <summary>Where is the Paragon clinic?</summary>
+          <p>The clinic is at 290 Orchard Road, #09-20/21 Paragon Medical Centre, Singapore 238859. Call <a href="tel:+6563200310">6320 0310</a> to confirm your visit.</p>
+        </details>
+        <details name="tdc-faq">
+          <summary>Which number should I use?</summary>
+          <p>Call Parkway East on <a href="tel:+6565179760">6517 9760</a> or Paragon on <a href="tel:+6563200310">6320 0310</a>. The shared WhatsApp-only number is <a href="https://wa.me/6582055209">8205 5209</a>. Include your preferred clinic in your message.</p>
+        </details>
+        <details name="tdc-faq">
+          <summary>Is my appointment confirmed when I message?</summary>
+          <p>No. Please wait for the clinic team to confirm your appointment date, time and location.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer dark">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <p class="footer-title">The Dermatology Clinic</p>
+        <p class="small">Paediatric · Adult · Laser · Surgery</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="https://thedermclinic.com.sg/our-doctor/">Dr Uma</a>
+        <a href="https://thedermclinic.com.sg/media-feature/">Media</a>
+        <a href="https://thedermclinic.com.sg/contact/">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> The Dermatology Clinic</span>
+      <span>Parkway East · Paragon #09-20/21</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-actions" aria-label="Quick appointment contact">
+  <a class="button outline" href="#clinics">Call a clinic <span class="arrow" aria-hidden="true"></span></a>
+  <a class="button" href="https://wa.me/6582055209">WhatsApp <span class="arrow" aria-hidden="true"></span></a>
+</nav>
+
+<script>
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('#navigation');
+
+function closeMenu() {
+  menu.setAttribute('aria-expanded', 'false');
+  menu.textContent = 'Menu';
+  nav.classList.remove('open');
+}
+
+menu.addEventListener('click', () => {
+  const open = menu.getAttribute('aria-expanded') !== 'true';
+  menu.setAttribute('aria-expanded', String(open));
+  menu.textContent = open ? 'Close' : 'Menu';
+  nav.classList.toggle('open', open);
+});
+
+nav.addEventListener('click', event => {
+  if (event.target.closest('a')) closeMenu();
+});
+
+document.addEventListener('click', event => {
+  if (!event.target.closest('.header')) closeMenu();
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+    closeMenu();
+    menu.focus();
+  }
+});
+
+window.matchMedia('(min-width:851px)').addEventListener('change', event => {
+  if (event.matches) closeMenu();
+});
+
+document.querySelectorAll('.faqs details').forEach(item => {
+  item.addEventListener('toggle', () => {
+    if (item.open) {
+      document.querySelectorAll('.faqs details').forEach(other => {
+        if (other !== item) other.open = false;
+      });
+    }
+  });
+});
+
+document.querySelector('#year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
